@@ -2,20 +2,25 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de horas de sono</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="btn-noturno" onclick="toggleDarkMode()">🌙</button> 
+
     <h1>Monitor de sono 😴</h1>
 
         <label for="horas">Horas de sono:</label>
-        <input type="number" id="horas" placeholder="Quantas horas você dormiu essa noite?">
+        <input type="number" id="horas" placeholder="Horas de sono nessa noite">
         <br><br>
 
-        <button onclick="calcularhoras()">Calcular Horas de sono</button>
+        <button onclick="conferir()">Conferir Sono 😴</button>
         <button onclick="limpar()">Limpar</button>
 
-    <h2 id="resultado"></h2>
+    <div class="container-resultado">
+      <h2 id="resultado"></h2>
+    </div> 
    
     <script src="script.js"></script>
 </body>
